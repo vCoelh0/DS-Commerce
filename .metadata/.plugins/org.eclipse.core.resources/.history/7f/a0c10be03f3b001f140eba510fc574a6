@@ -1,0 +1,7 @@
+spring.application.name=dscommerce
+
+
+spring.h2.console.settings.web-allow-others=true
+
+spring.profiles.active=test
+spring.jpa.open-in-view=false

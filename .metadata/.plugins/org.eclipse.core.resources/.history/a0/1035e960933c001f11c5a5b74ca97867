@@ -1,0 +1,5 @@
+package com.coelhodev.dscommerce.entities;
+
+public class Order {
+
+}
