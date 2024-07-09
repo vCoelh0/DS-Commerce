@@ -1,0 +1,4 @@
+INSERT INTO tb_category(name) VALUES ('Livros');
+INSERT INTO tb_category(name) VALUES ('Eletronicos');
+
+INSERT INTO tb_product(name, description, price, img_url) VALUES ('Senhor dos Aneis', 'Este livro é otimo', 300.0, 'http://livros.com');
