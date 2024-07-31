@@ -1,0 +1,5 @@
+package com.coelhodev.dscommerce.repositories;
+
+public interface ProductRepository {
+
+}

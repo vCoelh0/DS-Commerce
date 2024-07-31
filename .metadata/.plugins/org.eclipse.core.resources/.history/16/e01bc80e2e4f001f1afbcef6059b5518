@@ -1,0 +1,26 @@
+package com.coelhodev.dscommerce.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.coelhodev.dscommerce.dto.ProductDTO;
+import com.coelhodev.dscommerce.entities.Product;
+import com.coelhodev.dscommerce.repositories.ProductRepository;
+
+@Service
+
+public class ProductService {
+
+	@Autowired
+	private ProductRepository repository;
+	
+	public ProductDTO findById(Long id) {
+		Optional<Product> result = repository.findById(id);
+		Product product = result.get();
+		ProductDTO dto = new ProductDTO(product.getId(), product.getName());
+		
+	}
+
+}
