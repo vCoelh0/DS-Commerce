@@ -1,0 +1,5 @@
+package com.coelhodev.dscommerce.controllers.handlers;
+
+public class ControllerExceptionHandler {
+
+}

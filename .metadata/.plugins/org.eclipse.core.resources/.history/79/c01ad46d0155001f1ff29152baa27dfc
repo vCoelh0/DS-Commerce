@@ -1,0 +1,12 @@
+package com.coelhodev.dscommerce.dto;
+
+public class CustomError {
+
+	private String timestamp;
+	private String satatus;
+	private String error;
+	private String path;
+	
+	
+	
+}
