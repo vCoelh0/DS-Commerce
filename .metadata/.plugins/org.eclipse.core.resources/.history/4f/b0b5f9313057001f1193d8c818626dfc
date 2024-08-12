@@ -1,9 +1,0 @@
-package com.coelhodev.dscommerce.dto;
-
-import java.time.Instant;
-
-public class ValidationError extends CustomError {
-
-	
-
-}
