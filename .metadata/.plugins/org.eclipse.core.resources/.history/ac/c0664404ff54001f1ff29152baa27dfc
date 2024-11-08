@@ -1,5 +1,0 @@
-package com.coelhodev.dscommerce.services.exceptions;
-
-public class ResourceNotFoundException {
-
-}
