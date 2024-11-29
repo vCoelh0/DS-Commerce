@@ -23,9 +23,10 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name="tb_user")
-public class User implements UserDetails {
+public class User implements UserDetails{
 
 	
 	@Id
@@ -156,18 +157,42 @@ public class User implements UserDetails {
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
+	
+	
+	
+	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
-		return null;
+		return roles;
 	}
 
 	@Override
 	public String getUsername() {
-		// TODO Auto-generated method stub
-		return null;
+		return email;
 	}
+
+	
+	@Override
+	public boolean isAccountNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		return true;
+	}
+
 
 	
 }
