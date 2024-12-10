@@ -24,7 +24,6 @@ public class UserController {
 	public ResponseEntity<UserDTO> getMe() {
 		UserDTO dto = service.getMe();
 		return ResponseEntity.ok(dto);
-	
 	}
 	
 

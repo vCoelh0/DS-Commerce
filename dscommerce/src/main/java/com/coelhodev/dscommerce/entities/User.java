@@ -139,7 +139,6 @@ public class User implements UserDetails{
 	}
 
 	
-	
 	//=============================== equals and hascode ===============================
 	@Override
 	public int hashCode() {
